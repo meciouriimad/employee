@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeScreen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#4CAF50">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_toStartOf="@+id/daynight"
+               android:orientation="horizontal"
+               android:gravity="center_vertical"
+               android:weightSum="100">
+
+               <ImageButton
+                   android:id="@+id/return_home"
+                   android:layout_marginStart="9dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/ic_back"></ImageButton>
+
+               <TextView
+                   android:id="@+id/title"
+                   android:visibility="visible"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_marginStart="20dp"
+                   android:gravity="start|center_vertical"
+                   android:text="@string/title"
+                   android:paddingStart="20dp"
+                   android:textColor="@color/white"
+                   android:textSize="24sp"
+                   android:textStyle="bold|italic"/>
+               <EditText
+
+                   android:visibility="gone"
+                   android:layout_weight="80"
+                   android:id="@+id/search_employee"
+                   android:paddingStart="20dp"
+                   android:paddingEnd="20dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:background="#4CAF50"
+                   android:hint="@string/search"></EditText>
+               <ImageButton
+                   android:visibility="gone"
+                   android:layout_weight="10"
+                   android:id="@+id/filtre_search"
+                   android:layout_marginLeft="5dp"
+                   android:layout_width="20dp"
+                   android:layout_height="30dp"
+                   android:background="@drawable/ic_filter"></ImageButton>
+
+
+           </LinearLayout>
+
+            <ImageButton
+                android:layout_marginEnd="12dp"
+                android:id="@+id/daynight"
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_nightlight"
+                android:layout_toStartOf="@id/list_grid"
+                android:layout_centerVertical="true"/>
+
+            <ImageButton
+                android:id="@+id/list_grid"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_toStartOf="@id/search"
+                android:background="@drawable/ic_view_module"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                />
+
+            <ImageButton
+                android:id="@+id/search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/ic_search" />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/employee_model"
+            ></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/shown"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#FA7449">
+
+            <ImageView
+                android:id="@+id/close"
+                android:layout_marginStart="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ></ImageView>
+
+            <TextView
+                android:layout_toEndOf="@id/close"
+                android:id="@+id/counter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1"
+                android:gravity="center"
+                android:textSize="21sp"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_toEndOf="@id/counter"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/items"
+                android:gravity="center"
+                android:layout_marginStart="2mm"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_delete"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"/>
+        </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/adde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/add"
+        android:background="@drawable/btn"
+        android:paddingHorizontal="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"></Button>
+
+
+
+</RelativeLayout>

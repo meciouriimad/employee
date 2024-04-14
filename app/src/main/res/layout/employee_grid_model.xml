@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:paddingStart="2dp"
+    android:background="@drawable/employee_item"
+    android:orientation="vertical"
+    android:paddingBottom="15dp"
+    android:layout_marginTop="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="100">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="75"
+            android:id="@+id/pdp"
+
+            android:src="@drawable/profile"></de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <ImageButton
+            android:id="@+id/edit"
+            android:layout_alignParentEnd="true"
+            android:layout_width="17dp"
+            android:layout_height="50dp"
+            android:gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="75"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_edit"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck"></ImageButton>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="end"
+                android:text="@string/ide"
+                android:textColor="#3F51B5"
+                android:textSize="16sp"
+                android:textStyle="bold">
+
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="bottom"
+                android:text="@string/firstname"
+                android:textColor="#3F51B5"
+                android:textSize="16sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="top"
+                android:text="@string/lastname"
+                android:textColor="#3F51B5"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:paddingStart="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+
+                android:id="@+id/idemployee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:text="Halouane"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                >
+
+            </TextView>
+
+            <TextView
+
+                android:id="@+id/nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:text="Halouane"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                >
+
+            </TextView>
+
+            <TextView
+                android:maxLines="1"
+                android:id="@+id/prenom"
+                android:ellipsize="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:gravity="top"
+                android:text="Imad Eddine"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_email"></ImageView>
+
+        <TextView
+            android:textColor="#656363"
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="halouaneimad@gmail.com"
+            android:textSize="15sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_message"></ImageView>
+
+        <TextView
+            android:textColor="#656363"
+
+            android:id="@+id/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="0555927602"
+            android:textSize="17sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_call"></ImageView>
+
+        <TextView
+            android:textColor="#656363"
+            android:id="@+id/messagee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="0555927602"
+            android:textSize="17sp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:paddingHorizontal="10dp">
+
+        <LinearLayout
+            android:id="@+id/btn_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:padding="7dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_call"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_message"
+
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:padding="7dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_message"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_email"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:padding="7dp"
+            android:layout_marginStart="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_email"></ImageView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

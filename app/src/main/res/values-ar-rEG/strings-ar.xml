@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">العمال</string>
+    <string name="title">العمال</string>
+    <string name="firstname">الاسم </string>
+    <string name="lastname">اللقب </string>
+    <string name="number">الرقم</string>
+    <string name="email">البريد</string>
+    <string name="envoyer">ارسال</string>
+    <string name="add">اضافة</string>
+    <string name="continuer">متابعة</string>
+    <string name="call">اتصال</string>
+    <string name="message">رسالة</string>
+    <string name="items">عناصر</string>
+    <string name="search">البحث ...</string>
+    <string name="choose">اختر عنصر البحث : </string>
+    <string name="ok">حسنا</string>
+    <string name="ide">المعرف </string>
+
+    <string name="welcome">اهلا بك في تطبيق العمال</string>
+</resources>
